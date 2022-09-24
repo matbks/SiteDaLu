@@ -49,12 +49,12 @@ const StyledArrow = styled(HoverCardPrimitive.Arrow, {
   fill: 'white',
 });
 
-function Content({ children, ...props }) {
+function Content({ ...props }) {
   return (
     <HoverCardPrimitive.Portal >
      
       <StyledContent {...props}>
-        {children}
+        {/* {children} */}
         <StyledArrow />
       </StyledContent>
     </HoverCardPrimitive.Portal>

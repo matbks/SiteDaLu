@@ -25,9 +25,9 @@ function App() {
     pass: "invalid password"
   };
 
-  const handleSubmit = (ev2t) => {
+  const handleSubmit = (ev2t:any) => {
     //Prevent page reload
-    event.preventDefault();
+    ev2t.preventDefault();
 
     var { uname, pass } = document.forms[0];
 
@@ -49,10 +49,10 @@ function App() {
   };
 
   // Generate JSX code for error message
-  const renderErrorMessage = (name) =>
-    name === errorMessages.name && (
-      <div className="error">{errorMessages.message}</div>
-    );
+  // const renderErrorMessage = (name) =>
+  //   name === errorMessages.name && (
+  //     <div className="error">{errorMessages.message}</div>
+  //   );
 
   // JSX code for login form
   const renderForm = (
@@ -61,12 +61,12 @@ function App() {
         <div className="input-container">
           <label>E-mail </label>
           <input type="text" name="uname" required />
-          {renderErrorMessage("uname")}
+          {/* {renderErrorMessage("uname")} */}
         </div>
         <div className="input-container">
           <label>Senha </label>
           <input type="password" name="pass" required />
-          {renderErrorMessage("pass")}
+          {/* {renderErrorMessage("pass")} */}
         </div>
         <div className="button-container">
           <input type="submit" />
