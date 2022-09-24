@@ -9,8 +9,9 @@ function Page() {   // Import result is the URL of your image
 
             <NavBar />
 
-            <div style={{ backgroundImage: "url(/pudim.png)", 
-                          backgroundRepeat:'no-repeat',
+            <div style={{ 
+                        //   backgroundImage: "url(/pudim.png)", 
+                        //   backgroundRepeat:'no-repeat',
                           WebkitBackgroundSize:'auto', 
                           backgroundPositionX:'50%',               
                           backgroundPositionY:'25%', 
