@@ -7,6 +7,7 @@ type FooterProperties = {
     width: number;
 }
 
+//te
 export default function App(props: FooterProperties) {
   return (
 
