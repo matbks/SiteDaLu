@@ -70,7 +70,7 @@ const HoverCardDemo = (props:CardProperties) => (
       <Flex css={{ flexDirection: 'column', gap: 7 }}>
         <Img
           size="large"
-          src="../imagens/pudim.jpg"
+          src="../dist/assets/pudim.jpg"
         />
         <Flex css={{ flexDirection: 'column', gap: 15 }}>
           <Text>
