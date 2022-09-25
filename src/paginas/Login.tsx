@@ -76,13 +76,13 @@ function App() {
   );
 
   return (
-    <div>
+    <div style={{position:'relative'}}>
 
     
 
-    <div className="app">   
+    <div className="app" >   
     
-      <div className="login-form">
+      <div className="login-form"  >
       <img src='./pudim.jpg'  style={{position:'relative', borderRadius:'10px', left:'18%'  }}/>
         <div className="title" style={{position:'relative', borderRadius:'10px', left:'35%'}} >Login</div>
         {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
