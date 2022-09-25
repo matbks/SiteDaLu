@@ -10,7 +10,7 @@ function Page() {   // Import result is the URL of your image
             <NavBar />
 
             <div> 
-            <video autoPlay loop muted 
+            {/* <video autoPlay loop muted 
             style={{
                 position: "absolute",
                 height: "100%",
@@ -23,7 +23,7 @@ function Page() {   // Import result is the URL of your image
             }} >
             
                 <source src={Video} type="video/mp4"/>
-                </video>
+                </video> */}
                          {/* style={{ 
                         //   backgroundImage: "url(/pudim.png)", 
                         //   backgroundRepeat:'no-repeat',
