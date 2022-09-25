@@ -8,6 +8,7 @@
     height: 100vh;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     background-color: #f8f9fd;
+    
   }
   
   input[type="text"],
@@ -22,7 +23,7 @@
     font-size: 15px;
     background: #d87128;
     border: 1px solid #d391cc;
-    border-radius: 7%;
+    border-radius: 10%;
     color: #fff;
     padding: 10px 20px;
   }
@@ -34,9 +35,11 @@
   .button-container {
     display: flex;
     justify-content: center;
+    
   }
   
   .login-form {
+    border-radius: 10%;
     background-color: white;
     padding: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
