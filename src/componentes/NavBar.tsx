@@ -19,7 +19,7 @@ function BasicExample() {
           <Nav className="me-auto"> 
             <Nav.Link
             //  style={{ position: 'relative', fontSize:25}}
-             href="#link">Comprar</Nav.Link>
+             href="Comprar"><h2>Comprar</h2></Nav.Link>
             <NavDropdown
             //  style={{ position: 'relative', left: 20, fontSize:25}} 
              title="Cadastro" id="basic-nav-dropdown">
