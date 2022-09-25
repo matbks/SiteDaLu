@@ -62,7 +62,7 @@ const Text = styled('div', {
 const HoverCardDemo = (props:CardProperties) => (
   <HoverCard>
     <HoverCardTrigger  href="https://www.instagram.com/pudimdalu01/">
-      <Img src="./src/imagens/pudim.jpg" style={{ position:'relative', width: calcIconSize(props.width), height: calcIconSize(props.width) }} />
+      <Img src="./pudim.jpg" style={{ position:'relative', width: calcIconSize(props.width), height: calcIconSize(props.width) }} />
     </HoverCardTrigger >
     <HoverCardContent  
     //  offset={5}
@@ -70,7 +70,7 @@ const HoverCardDemo = (props:CardProperties) => (
       <Flex css={{ flexDirection: 'column', gap: 7 }}>
         <Img
           size="large"
-          src="../dist/assets/pudim.jpg"
+          src="./pudim.jpg"
         />
         <Flex css={{ flexDirection: 'column', gap: 15 }}>
           <Text>

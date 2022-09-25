@@ -16,16 +16,16 @@ function BasicExample() {
         <Card width={ width }/>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" >
-          <Nav className="me-auto"> 
+          <Nav className="me-auto" style={{ marginLeft:10}}> 
             <Nav.Link
             //  style={{ position: 'relative', fontSize:25}}
-             href="Comprar"><h2>Comprar</h2></Nav.Link>
+             href="Comprar"><h4>Comprar</h4></Nav.Link>
             <NavDropdown
             //  style={{ position: 'relative', left: 20, fontSize:25}} 
              title="Cadastro" id="basic-nav-dropdown">
               <NavDropdown.Item
             //   style={{ position: 'relative', fontSize:20}} 
-              href="cadastro">Cadastro</NavDropdown.Item>
+              href="cadastro"><h4>Cadastro</h4></NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item
               href="login">Login</NavDropdown.Item>
