@@ -28,7 +28,7 @@ function BasicExample() {
               href="cadastro"><h4>Cadastro</h4></NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item
-              href="login">Login</NavDropdown.Item>
+              href="login"><h4>Login</h4></NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
