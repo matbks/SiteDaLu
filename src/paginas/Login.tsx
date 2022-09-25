@@ -76,10 +76,7 @@ function App() {
   );
 
   return (
-    <div style={{position:'relative'}}>
-
-    
-
+    <div>
     <div className="app" >   
     
       <div className="login-form"  >
