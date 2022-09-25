@@ -3,7 +3,11 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-k
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-export default function App() {
+type FooterProperties = {
+    width: number;
+}
+
+export default function App(props: FooterProperties) {
   return (
 
     <MDBFooter bgColor='light' className='text-center text-lg-start text-muted navbar-fixed-bottom'
@@ -22,7 +26,7 @@ export default function App() {
         padding: '2%'
       }}
     >
-      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
+      <section className='d-flex justify-content-center justify-content-lg-between p-6 '>
 
         <div className='me-5 d-none d-lg-block' >
 
@@ -30,18 +34,16 @@ export default function App() {
             style={{
               backgroundImage: 'linear-gradient(45deg, #ffbb66 48%, #C850C0 98%)',
               position: 'relative',
-              top: '-60%'
+              top: '10%'
             }}>
 
-            <h5>O melhor pudim do mundo!</h5>
+            <h5 style={{ position:'relative', bottom:calcWppHeight(props.width)-5}}>O melhor pudim do mundo!</h5>
 
           </span>
 
-         
-
         </div>
-        <div >
-         <a href='https://wa.me/553299174320' className='me-4 text-reset' style={{position:'relative', top:'-38px'}} >
+        <div style={{ position:'relative', bottom:calcWppHeight(props.width)}}>
+         <a href='https://wa.me/553299174320' className='me-4 text-reset' >
             <MDBIcon fab icon="whatsapp" size="3x" />
           </a>
           </div>
@@ -49,4 +51,21 @@ export default function App() {
 
     </MDBFooter>
   );
+
+ function calcWppHeight(width:number){
+
+  if (width < 450)
+  {
+    return -7;
+  }
+
+  else if (width < 550) {
+    return 1;
+  }
+
+  else{
+    return 15;
+  }
+  
+}
 }

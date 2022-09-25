@@ -3,6 +3,11 @@ import { styled, keyframes } from '@stitches/react';
 import { mauve } from '@radix-ui/colors';
 import * as HoverCardPrimitive from '@radix-ui/react-hover-card';
 
+type CardProperties = {
+  width: number;
+}
+
+
 const show = keyframes({
   '0%': { opacity: 0 },
   '100%': { opacity: 1 },
@@ -53,10 +58,11 @@ const Text = styled('div', {
   },
 });
 
-const HoverCardDemo = () => (
+
+const HoverCardDemo = (props:CardProperties) => (
   <HoverCard>
     <HoverCardTrigger  href="https://www.instagram.com/pudimdalu01/">
-      <Img src="./src/imagens/pudim.jpg"  />
+      <Img src="./src/imagens/pudim.jpg" style={{ position:'relative', width: calcIconSize(props.width), height: calcIconSize(props.width) }} />
     </HoverCardTrigger >
     <HoverCardContent  
     //  offset={5}
@@ -90,7 +96,17 @@ const HoverCardDemo = () => (
       </Flex>
     </HoverCardContent>
   </HoverCard>
+
+  
 );
+
+function calcIconSize(width:number){
+  if( width < 415 )
+    return '70px';
+  else{
+    return '100px';
+  }
+}
 
 export default HoverCardDemo;
 

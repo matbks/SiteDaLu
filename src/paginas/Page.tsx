@@ -37,7 +37,7 @@ export function Page() {
             <NavBar/>
             </div>
             { Video }
-            <Footer/>
+            <Footer width={ width }/>
         </div>
         )}
 
