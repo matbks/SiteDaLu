@@ -6,11 +6,11 @@ import Card from './Card'
 
 function BasicExample() {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container> 
+    <Navbar bg="light" expand="lg"  fixed="top">
+      <Container > 
         <Card/>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className="me-auto"> 
             <Nav.Link
             //  style={{ position: 'relative', fontSize:25}}

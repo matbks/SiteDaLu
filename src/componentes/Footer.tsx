@@ -8,7 +8,7 @@ export default function App() {
   return (
     
     <MDBFooter bgColor='light' className='text-center text-lg-start text-muted' style={{
-      position: 'absolute',
+      position: 'fixed',
       left:0,
       bottom:0,
       right:0,

@@ -55,10 +55,10 @@ const Text = styled('div', {
 
 const HoverCardDemo = () => (
   <HoverCard>
-    <HoverCardTrigger href="https://www.instagram.com/pudimdalu01/">
-      <Img src="./src/imagens/pudim.jpg" />
-    </HoverCardTrigger>
-    <HoverCardContent
+    <HoverCardTrigger  href="https://www.instagram.com/pudimdalu01/">
+      <Img src="./src/imagens/pudim.jpg"  />
+    </HoverCardTrigger >
+    <HoverCardContent  
     //  offset={5}
     >
       <Flex css={{ flexDirection: 'column', gap: 7 }}>
