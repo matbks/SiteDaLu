@@ -1,8 +1,7 @@
 import React from 'react';
 import { styled, keyframes } from '@stitches/react';
 import { mauve } from '@radix-ui/colors';
-import * as HoverCardPrimitive from '@radix-ui/react-hover-card';
-
+import * as HoverCardPrimitive from '@radix-ui/react-hover-card'; 
 type CardProperties = {
   width: number;
 }
@@ -59,10 +58,11 @@ const Text = styled('div', {
 });
 
 
+
 const HoverCardDemo = (props:CardProperties) => (
   <HoverCard>
     <HoverCardTrigger  href="https://www.instagram.com/pudimdalu01/">
-      <Img src="../src/imagens/pudim.jpg" style={{ position:'relative', width: calcIconSize(props.width), height: calcIconSize(props.width) }} />
+      <Img src="../imagens/pudim.jpg" style={{ position:'relative', width: calcIconSize(props.width), height: calcIconSize(props.width) }} />
     </HoverCardTrigger >
     <HoverCardContent  
     //  offset={5}
@@ -70,7 +70,7 @@ const HoverCardDemo = (props:CardProperties) => (
       <Flex css={{ flexDirection: 'column', gap: 7 }}>
         <Img
           size="large"
-          src="../src/imagens/pudim.jpg"
+          src="../imagens/pudim.jpg"
         />
         <Flex css={{ flexDirection: 'column', gap: 15 }}>
           <Text>
