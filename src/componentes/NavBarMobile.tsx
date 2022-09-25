@@ -26,7 +26,7 @@ function BasicExample() {
             
             <Nav.Link
             //  style={{ position: 'relative', fontSize:25}}
-             href="Login" style={{ fontSize:24, position:'relative', left:width/2  }}> Login </Nav.Link>
+             href="Login" style={{ fontSize:24, position:'relative', left:"39%"  }}> Login </Nav.Link>
             {/* <NavDropdown
             //  style={{ position: 'relative', left: 20, fontSize:25}} 
              title="Cadastro" id="basic-nav-dropdown" style={{ fontSize:24, position:'relative', left:'35%' }}>
