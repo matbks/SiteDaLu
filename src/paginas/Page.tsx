@@ -12,7 +12,7 @@ function Page() {   // Import result is the URL of your image
             <div> 
             <video autoPlay loop muted 
             style={{
-                position: "fixed",
+                position: "inherit",
                 height: "100%",
                 width: "100%",
                 // left: 0,
