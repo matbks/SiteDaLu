@@ -21,7 +21,7 @@ function BasicExample() {
              href="Comprar" style={{ fontSize:24, position:'relative', left:60}}> Comprar </Nav.Link>
             <NavDropdown
             //  style={{ position: 'relative', left: 20, fontSize:25}} 
-             title="Cadastro" id="basic-nav-dropdown" style={{ fontSize:24, position:'relative', left:90    }}>
+             title="Cadastro" id="basic-nav-dropdown" style={{ fontSize:23, position:'relative', left:90, top:2   }}>
               <NavDropdown.Item
             //   style={{ position: 'relative', fontSize:20}} 
               href="cadastro"><h6>Cadastro</h6></NavDropdown.Item>
