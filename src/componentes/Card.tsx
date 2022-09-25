@@ -1,8 +1,8 @@
 import React from 'react';
-
 import { styled, keyframes } from '@stitches/react';
 import { mauve } from '@radix-ui/colors';
 import * as HoverCardPrimitive from '@radix-ui/react-hover-card';
+
 
 const slideUpAndFade = keyframes({
   '0%': { opacity: 0, transform: 'translateY(2px)' },
@@ -49,12 +49,12 @@ const StyledArrow = styled(HoverCardPrimitive.Arrow, {
   fill: 'white',
 });
 
-function Content({ ...props }) {
+function Content({ children, ...props }) {
   return (
     <HoverCardPrimitive.Portal >
      
-      <StyledContent {...props}>
-        {/* {children} */}
+      <StyledContent {  ...props}>
+        {children}
         <StyledArrow />
       </StyledContent>
     </HoverCardPrimitive.Portal>

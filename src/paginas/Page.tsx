@@ -12,11 +12,12 @@ function Page() {   // Import result is the URL of your image
             <div> 
             <video autoPlay loop muted 
             style={{
-                position: "fixed",
-                // height: "100%",
-                // width: "90%",
-                // left: "0%",
-                // top: "12%",
+                position: "absolute",
+                height: "100%",
+                width: "100%",
+                // left: 0,
+                // top: 0, 
+
                 objectFit: "cover",
                 // transform: "translate (-50, -50)"
             }} >
