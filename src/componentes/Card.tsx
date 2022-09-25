@@ -62,7 +62,7 @@ const Text = styled('div', {
 const HoverCardDemo = (props:CardProperties) => (
   <HoverCard>
     <HoverCardTrigger  href="https://www.instagram.com/pudimdalu01/">
-      <Img src="../imagens/pudim.jpg" style={{ position:'relative', width: calcIconSize(props.width), height: calcIconSize(props.width) }} />
+      <Img src="./src/imagens/pudim.jpg" style={{ position:'relative', width: calcIconSize(props.width), height: calcIconSize(props.width) }} />
     </HoverCardTrigger >
     <HoverCardContent  
     //  offset={5}
