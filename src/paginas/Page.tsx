@@ -1,7 +1,8 @@
 import NavBar from "../componentes/NavBar"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "../componentes/Footer"
-import './style.css' 
+import './style.css'
+import Video from "../paginas/img/videopudim.mp4"
 
 function Page() {   // Import result is the URL of your image  
     return (
