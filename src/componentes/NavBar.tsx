@@ -3,12 +3,17 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Card from './Card'
+import React from 'react'
+
+
 
 function BasicExample() {
+  const [width, setWidth] = React.useState(window.innerWidth);
+  let wid:number = width;
   return (
     <Navbar bg="light" expand="lg"  fixed="top">
       <Container > 
-        <Card/>
+        <Card width={ width }/>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className="me-auto"> 
