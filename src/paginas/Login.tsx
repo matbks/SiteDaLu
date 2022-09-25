@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom"; 
 
 import "./style.css";
 
@@ -56,7 +56,7 @@ function App() {
 
   // JSX code for login form
   const renderForm = (
-    <div className="form">
+    <div className="form" style={{position:'unset'}}>
       <form onSubmit={handleSubmit}>
         <div className="input-container">
           <label>E-mail </label>
@@ -76,11 +76,19 @@ function App() {
   );
 
   return (
-    <div className="app">
+    <div>
+
+    
+
+    <div className="app">   
+    
       <div className="login-form">
-        <div className="title">Login</div>
+      <img src='./pudim.jpg'  style={{position:'relative', borderRadius:'10px', left:'18%'  }}/>
+        <div className="title" style={{position:'relative', borderRadius:'10px', left:'35%'}} >Login</div>
         {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
       </div>
+    </div>
+
     </div>
   );
 }
