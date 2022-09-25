@@ -13,7 +13,7 @@ export function MobilePage1() {
                     loop 
                     muted 
                     width="415px" 
-                    height="820px"
+                    height="850px"
                     style={{  position: "fixed",
                               objectFit: "cover" }} 
                 >
