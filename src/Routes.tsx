@@ -10,7 +10,7 @@ export function AppRoutes() {
         <Router> 
            <Routes>
             <Route path="/" element = {<Page /> } />
-            <Route path="login" element={<Page />} />
+            <Route path="login" element = {<Login /> } />
            </Routes>
         </Router>
     );
