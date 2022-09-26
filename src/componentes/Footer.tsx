@@ -19,14 +19,8 @@ export default function App(props: FooterProperties) {
         right: 0,
         height: '80px',
         borderTopLeftRadius:'8px',
-        borderTopRightRadius:'8px',
-        // marginBlock: '1%',
-        // marginLeft: '1%',
-        // marginRight: '1%',
-        // borderRadius: '15px',
-        
-        color: '#fff',
-        // padding: '2%'
+        borderTopRightRadius:'8px',  
+        color: '#fff'
       }}
     >
       <section className='d-flex justify-content-center justify-content-lg-between p-6 '>

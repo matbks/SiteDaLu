@@ -18,7 +18,7 @@ function BasicExample() {
         <Card width={width} />
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" style={{}}>
-          <Nav className="me-auto" style={{ marginLeft: 35 }}>
+          <Nav className="me-auto" style={{ marginLeft: 45 }}>
             {/* <Nav.Link
               //  style={{ position: 'relative', fontSize:25}}
               href="Comprar" style={{ fontSize: 24, position: 'relative', left: 60 }}> Comprar </Nav.Link> */}
