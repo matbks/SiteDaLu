@@ -74,8 +74,8 @@
   //   </div>
   // );
 
-  function App(){ 
-    return 
+  // function App(){ 
+  //   return 
     // (
     // <div>
     {/* <div className="app" >   
@@ -86,10 +86,12 @@
         {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
       </div>
     </div> */}
-    <h1>teste</h1>
+    // <h1>teste</h1>
     // </div>
   //  );
+  // }
+
+  function App() {
+    return <h1>teste</h1>;
   }
-
-
 export default App;
