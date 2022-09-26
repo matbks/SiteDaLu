@@ -10,27 +10,34 @@ function BasicExample() {
   const [width, setWidth] = React.useState(window.innerWidth);
   let wid: number = width;
   return (
-    <Navbar bg="light" expand="lg" fixed="top">
+    <Navbar bg="light" expand="lg" fixed="top"  style={{borderBottomLeftRadius:'10px', 
+                                                        borderBottomRightRadius:'10px',
+                                                        position:'fixed', 
+                                                        width:'100%', 
+                                                        right:'8px' 
+                                                      }}
+                                                        >
       <Container >
         <Card width={width} />
-        <Navbar.Toggle aria-controls="basic-navbar-nav " />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav justify-content-center" >
           <Nav className=" row justify-content-center">           
-            <form
-              className="container-fluid justify-content-center mt-1"
-              style={{ fontSize: 24,
-                       position: 'relative' }}
+          <form
+              className="container-fluid justify-content-center mt-3"
+              style={{ fontSize: 24, position: 'relative' }}
             >
               <button
                 className="btn btn-outline-success me-2 btn-lg"
                 type="button"
-                style={{ fontSize: 24, position: 'relative', width: '100%' }}
+                style={{ fontSize: 24,
+                         position: 'relative', 
+                            width: '100%' }}
               >Login</button>
 
             </form>
  
             <form
-              className="container-fluid justify-content-center mt-1"
+              className="container-fluid justify-content-center mt-3"
               style={{ fontSize: 24, position: 'relative' }}
             >
               <button
@@ -44,18 +51,15 @@ function BasicExample() {
             </form>
 
             <form
-              className="container-fluid justify-content-center mt-1"
-              style={{ fontSize: 24, 
-                       position: 'relative' }}
+              className="container-fluid justify-content-center mt-3"
+              style={{ fontSize: 24, position: 'relative' }}
             >
               <button
-                className="btn btn-outline-warning me-2 btn-lg"
+                className="btn btn-outline-success me-2 btn-lg"
                 type="button"
-                style={{ fontSize: 24, 
+                style={{ fontSize: 24,
                          position: 'relative', 
-                            width: '100%',
-                            color:'darkgrey' 
-                           }}
+                            width: '100%' }}
               >Comprar</button>
 
             </form>

@@ -18,13 +18,15 @@ export default function App(props: FooterProperties) {
         left: 0,
         right: 0,
         height: '80px',
-        marginBlock: '1%',
-        marginLeft: '1%',
-        marginRight: '1%',
-        borderRadius: '15px',
-        border: '2%',
+        borderTopLeftRadius:'8px',
+        borderTopRightRadius:'8px',
+        // marginBlock: '1%',
+        // marginLeft: '1%',
+        // marginRight: '1%',
+        // borderRadius: '15px',
+        
         color: '#fff',
-        padding: '2%'
+        // padding: '2%'
       }}
     >
       <section className='d-flex justify-content-center justify-content-lg-between p-6 '>
@@ -38,7 +40,9 @@ export default function App(props: FooterProperties) {
               top: '10%'
             }}>
 
-            <h5 style={{ position:'relative', bottom:calcWppHeight(props.width)-5}}>O melhor pudim do mundo!</h5>
+            <h5 style={{ position:'relative', 
+                         bottom:calcWppHeight(props.width)-5}}
+                         >O melhor pudim do mundo!</h5>
 
           </span>
 
