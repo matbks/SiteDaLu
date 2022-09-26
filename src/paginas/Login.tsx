@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom"; 
-
 import "./style.css";
 
 function App() {
@@ -27,7 +26,7 @@ function App() {
 
   const handleSubmit = (ev2t:any) => {
     //Prevent page reload
-    ev2t.preventDefault();
+    // ev2t.preventDefault();
 
     var { uname, pass } = document.forms[0];
 
@@ -49,7 +48,7 @@ function App() {
   };
 
   // Generate JSX code for error message
-  // const renderErrorMessage = (name) =>
+  // const renderErrorMessage = (name:any) =>
   //   name === errorMessages.name && (
   //     <div className="error">{errorMessages.message}</div>
   //   );
