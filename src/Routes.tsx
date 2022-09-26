@@ -11,7 +11,7 @@ export function AppRoutes() {
             <Route path="/" element={<Page />} />
             <Route path="/login" 
                 element={
-                <Login />
+                <Page />
                 // <h1>Teste</h1>
                 } />
            </Routes>
