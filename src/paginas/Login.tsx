@@ -38,7 +38,7 @@ function App() {
       if (userData.password !== pass.value) {
         // Invalid password
         setErrorMessages({ name: "pass", message: errors.pass });
-      } else {
+      } else {  
         setIsSubmitted(true);
       }
     } else {
@@ -76,15 +76,15 @@ function App() {
 
   return (
     <div>
-    <div className="app" >   
+    {/* <div className="app" >   
     
       <div className="login-form"  >
       <img src='./pudim.jpg'  style={{position:'relative', borderRadius:'10px', left:'18%'  }}/>
         <div className="title" style={{position:'relative', borderRadius:'10px', left:'35%'}} >Login</div>
         {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
       </div>
-    </div>
-
+    </div> */}
+    <h1>teste</h1>
     </div>
   );
 }
