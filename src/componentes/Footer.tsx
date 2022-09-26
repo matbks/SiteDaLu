@@ -40,14 +40,14 @@ export default function App(props: FooterProperties) {
               top: '10%'
             }}>
 
-            <h5 style={{ position:'relative', 
-                         bottom:calcWppHeight(props.width)-5}}
+            <h5 style={{ position:'relative', left:'15px',
+                         bottom:calcWppHeight(props.width)}}
                          >O melhor pudim do mundo!</h5>
 
           </span>
 
         </div>
-        <div style={{ position:'relative', bottom:calcWppHeight(props.width)}}>
+        <div style={{ position:'relative', bottom:calcWppHeight(props.width)+7}}>
          <a href='https://wa.me/553299174320' className='me-4 text-reset' >
             <MDBIcon fab icon="whatsapp" size="3x" style={{ color:'orange'}} />
           </a>
@@ -61,7 +61,7 @@ export default function App(props: FooterProperties) {
 
   if (width < 450)
   {
-    return -7;
+    return -20;
   }
 
   else if (width < 550) {
@@ -69,7 +69,7 @@ export default function App(props: FooterProperties) {
   }
 
   else{
-    return 15;
+    return -22;
   }
   
 }
