@@ -1,4 +1,4 @@
-import  Page  from "./paginas/Page" 
+import Page  from "./paginas/Page" 
 import Login from "./paginas/Login"
 import { BrowserRouter as Router,
          Routes,
@@ -9,7 +9,11 @@ export function AppRoutes() {
         <Router> 
            <Routes>
             <Route path="/" element={<Page />} />
-            <Route path="/login" element={<Login />} />
+            <Route path="/login" 
+                element={
+                // <Login />
+                <h1>Teste</h1>
+                } />
            </Routes>
         </Router>
     )

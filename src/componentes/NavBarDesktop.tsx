@@ -22,7 +22,7 @@ function BasicExample() {
             {/* <Nav.Link
               //  style={{ position: 'relative', fontSize:25}}
               href="Comprar" style={{ fontSize: 24, position: 'relative', left: 60 }}> Comprar </Nav.Link> */}
-              <form className="container-fluid justify-content-start ">
+            <form className="container-fluid justify-content-start ">
               <button className="btn btn-outline-success me-2 btn-lg " type="button">Comprar</button>
             </form>
             <NavDropdown
@@ -34,7 +34,7 @@ function BasicExample() {
               <NavDropdown.Divider />
               <NavDropdown.Item
                 href="login"><h6>Login</h6></NavDropdown.Item>
-            </NavDropdown>            
+            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -45,7 +45,7 @@ export default function App(props: FooterProperties) {
         </div>
         <div style={{ position:'relative', bottom:calcWppHeight(props.width)}}>
          <a href='https://wa.me/553299174320' className='me-4 text-reset' >
-            <MDBIcon fab icon="whatsapp" size="3x" />
+            <MDBIcon fab icon="whatsapp" size="3x" style={{ color:'orange'}} />
           </a>
           </div>
       </section>
