@@ -11,6 +11,7 @@ export function AppRoutes() {
            <Routes>
             <Route path="/" element = {<Page /> } />
             <Route path="login" element = {<Page /> } />
+            <Route path="/login" element = {<Page /> } />
            </Routes>
         </Router>
     );
