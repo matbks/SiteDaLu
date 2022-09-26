@@ -1,42 +1,65 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
 import Card from './Card'
-import React from 'react'  
+import React from 'react'
 
 
 function BasicExample() {
   const [width, setWidth] = React.useState(window.innerWidth);
-  let wid:number = width;
+  let wid: number = width;
   return (
-    <Navbar bg="light" expand="lg"  fixed="top">
-      <Container > 
-        <Card width={ width }/>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" >
-          <Nav className="me-auto" style={{ marginLeft:10}}> 
-            <Nav.Link
-            //  style={{ position: 'relative', fontSize:25}}
-             href="Comprar" style={{ fontSize:24, position:'relative', left:"35%"}}> Comprar </Nav.Link>
-            
-            <Nav.Link
-            //  style={{ position: 'relative', fontSize:25}}
-             href="Cadastrar" style={{ fontSize:24, position:'relative', left:"35%"}}> Cadastrar </Nav.Link>
-            
-            <Nav.Link
-            //  style={{ position: 'relative', fontSize:25}}
-             href="login" style={{ fontSize:24, position:'relative', left:"39%"  }}> Login </Nav.Link>
-            {/* <NavDropdown
-            //  style={{ position: 'relative', left: 20, fontSize:25}} 
-             title="Cadastro" id="basic-nav-dropdown" style={{ fontSize:24, position:'relative', left:'35%' }}>
-              <NavDropdown.Item
-            //   style={{ position: 'relative', fontSize:20}} 
-              href="cadastro"><h6>Cadastro</h6></NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item
-              href="login"><h6>Login</h6></NavDropdown.Item>
-            </NavDropdown> */}
+    <Navbar bg="light" expand="lg" fixed="top">
+      <Container >
+        <Card width={width} />
+        <Navbar.Toggle aria-controls="basic-navbar-nav " />
+        <Navbar.Collapse id="basic-navbar-nav justify-content-center" >
+          <Nav className=" row justify-content-center">           
+            <form
+              className="container-fluid justify-content-center mt-1"
+              style={{ fontSize: 24,
+                       position: 'relative' }}
+            >
+              <button
+                className="btn btn-outline-success me-2 btn-lg"
+                type="button"
+                style={{ fontSize: 24, position: 'relative', width: '100%' }}
+              >Login</button>
+
+            </form>
+
+            <form
+              className="container-fluid justify-content-center mt-1"
+              style={{ fontSize: 24, position: 'relative' }}
+            >
+              <button
+                className="btn btn-outline-success me-2 btn-lg"
+                type="button"
+                style={{ fontSize: 24,
+                         position: 'relative', 
+                            width: '100%' }}
+              >Cadastro</button>
+
+            </form>
+
+            <form
+              className="container-fluid justify-content-center mt-1"
+              style={{ fontSize: 24, 
+                       position: 'relative' }}
+            >
+              <button
+                className="btn btn-outline-warning me-2 btn-lg"
+                type="button"
+                style={{ fontSize: 24, 
+                         position: 'relative', 
+                            width: '100%',
+                            color:'darkgrey' 
+                           }}
+              >Comprar</button>
+
+            </form>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -44,11 +67,10 @@ function BasicExample() {
   );
 }
 
-function calcHalfWidth(){
+function calcHalfWidth() {
 
   const [width, setWidth] = React.useState(window.innerWidth);
-   
-  
+
 }
 
 export default BasicExample;
