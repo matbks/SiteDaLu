@@ -9,12 +9,8 @@ export function AppRoutes() {
         <Router> 
            <Routes>
             <Route path="/" element={<Page />} />
-            <Route path="/login" 
-                element={
-                <Page />
-                // <h1>Teste</h1>
-                } />
+            <Route path="/login" element={<Page />} />
            </Routes>
         </Router>
-    )
+    );
 }
