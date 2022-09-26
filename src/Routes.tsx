@@ -11,7 +11,7 @@ export function AppRoutes() {
            <Routes>
             <Route path="/" element = {<Page /> } />
             <Route path="login" element = {<Page /> } />
-            <Route path="/login" element = {<Page /> } />
+            <Route path="cadastro" element = {<Login /> } />
            </Routes>
         </Router>
     );
