@@ -54,27 +54,28 @@ function App() {
   //   );
 
   // JSX code for login form
-  const renderForm = (
-    <div className="form" style={{position:'unset'}}>
-      <form onSubmit={handleSubmit}>
-        <div className="input-container">
-          <label>E-mail </label>
-          <input type="text" name="uname" required />
-          {/* {renderErrorMessage("uname")} */}
-        </div>
-        <div className="input-container">
-          <label>Senha </label>
-          <input type="password" name="pass" required />
-          {/* {renderErrorMessage("pass")} */}
-        </div>
-        <div className="button-container">
-          <input type="submit" />
-        </div>
-      </form>
-    </div>
-  );
+  // const renderForm = (
+  //   <div className="form" style={{position:'unset'}}>
+  //     <form onSubmit={handleSubmit}>
+  //       <div className="input-container">
+  //         <label>E-mail </label>
+  //         <input type="text" name="uname" required />
+  //         {/* {renderErrorMessage("uname")} */}
+  //       </div>
+  //       <div className="input-container">
+  //         <label>Senha </label>
+  //         <input type="password" name="pass" required />
+  //         {/* {renderErrorMessage("pass")} */}
+  //       </div>
+  //       <div className="button-container">
+  //         <input type="submit" />
+  //       </div>
+  //     </form>
+  //   </div>
+  // );
 
-  return (
+  function App(){ 
+    return (
     <div>
     {/* <div className="app" >   
     
@@ -86,7 +87,8 @@ function App() {
     </div> */}
     <h1>teste</h1>
     </div>
-  );
+   );
+  }
 }
 
 export default App;
