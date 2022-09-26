@@ -75,8 +75,9 @@
   // );
 
   function App(){ 
-    return (
-    <div>
+    return 
+    // (
+    // <div>
     {/* <div className="app" >   
     
       <div className="login-form"  >
@@ -86,8 +87,8 @@
       </div>
     </div> */}
     <h1>teste</h1>
-    </div>
-   );
+    // </div>
+  //  );
   }
 
 
