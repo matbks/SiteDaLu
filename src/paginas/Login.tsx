@@ -78,8 +78,8 @@ return(
   <div>
     <div className="app" >
       <div className="login-form" style={{ borderRadius: '10px' }}  >
-        <img src='./pudim.jpg' style={{ position: 'relative', borderRadius: '10px', left: '18%' }} />
-        <div className="title" style={{ position: 'relative', borderRadius: '10px', left: '35%' }} >Login</div>
+        <img src='./pudim.jpg'    style={{ position: 'relative', borderRadius: '10px', left: '18%' }} />
+        <div className="title"    style={{ position: 'relative', borderRadius: '10px', left: '35%' }} >Login</div>
         {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
       </div>
     </div>
