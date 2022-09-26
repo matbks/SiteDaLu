@@ -48,10 +48,10 @@ function App() {
   };
 
   // Generate JSX code for error message
-  const renderErrorMessage = (name: any) =>
-    name === errorMessages.name && (
-      <div className="error">{errorMessages.message}</div>
-    );
+  // const renderErrorMessage = (name: any) =>
+  //   name === errorMessages.name && (
+  //     <div className="error">{errorMessages.message}</div>
+  //   );
 
   // JSX code for login form
   const renderForm = (
@@ -74,17 +74,18 @@ function App() {
     </div>
   );
 
-return(
-  <div>
-    <div className="app" >
-      <div className="login-form" style={{ borderRadius: '10px' }}  >
-        <img src='./pudim.jpg'    style={{ position: 'relative', borderRadius: '10px', left: '18%' }} />
-        <div className="title"    style={{ position: 'relative', borderRadius: '10px', left: '35%' }} >Login</div>
-        {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
+  return (
+    <div>
+      <div className="app" >
+        <div className="login-form" style={{ borderRadius: '10px' }}  >
+          <img src='./pudim.jpg' style={{ position: 'relative', borderRadius: '10px', left: '18%' }} />
+          <div className="title" style={{ position: 'relative', borderRadius: '10px', left: '35%' }} >Login</div>
+          {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+
 }
 
 
